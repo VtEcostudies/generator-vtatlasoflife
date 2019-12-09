@@ -1,0 +1,924 @@
+ansible-playbook -u ubuntu -i vtatlasoflife-inventory.yml -i vtatlasoflife-local-extras.yml -i vtatlasoflife-local-passwords.yml ../ala-install/ansible/collectory-standalone.yml --limit collectory.vtatlasoflife.org --extra-vars ala_install_repo=../ala-install
+
+PLAY [collectory] ****************************************************************************************************
+
+TASK [Gathering Facts] ***********************************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [common : show ansible versions] ********************************************************************************
+ok: [collectory.vtatlasoflife.org] => {
+    "msg": "You are using Ansible 2.8.0 on Debian. The current supported version for ala-install is 2.8.1."
+}
+
+TASK [common : check the ansible version] ****************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [common : set ubuntu-14.04 variables] ***************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [common : set ubuntu-16.04 variables] ***************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [common : set ubuntu-18.04 variables - tomcat version] **********************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [common : set ubuntu-18.04 variables] ***************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [common : set java defaults for openjdk8] ***********************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [common : set java defaults for zulu8] **************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [common : set name index date] **********************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [common : set name data date] ***********************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [common : set name index location with date latest] *************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [common : using the ALA nexus repository] ***********************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [common : using the GBIF nexus repository] **********************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [common : setup name index and data URLs] ***********************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [common : setup name sources] ***********************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [common : set whether webserver is apache or nginx] *************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [common : set exec_jar as default value] ************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [common : set deployment packaging] *****************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [common : file] *************************************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [common : file] *************************************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [common : stat] *************************************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [common : debug] ************************************************************************************************
+ok: [collectory.vtatlasoflife.org] => {
+    "msg": "data directory /data exists already"
+}
+
+TASK [common : debug] ************************************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [common : apt-get update (Debian)] ******************************************************************************
+changed: [collectory.vtatlasoflife.org]
+
+TASK [java : show ansible versions] **********************************************************************************
+ok: [collectory.vtatlasoflife.org] => {
+    "msg": "You are using Ansible 2.8.0 on Debian. The current supported version for ala-install is 2.8.1."
+}
+
+TASK [java : check the ansible version] ******************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : set ubuntu-14.04 variables] *****************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : set ubuntu-16.04 variables] *****************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : set ubuntu-18.04 variables - tomcat version] ************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [java : set ubuntu-18.04 variables] *****************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [java : set java defaults for openjdk8] *************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [java : set java defaults for zulu8] ****************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : set name index date] ************************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [java : set name data date] *************************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [java : set name index location with date latest] ***************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [java : using the ALA nexus repository] *************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [java : using the GBIF nexus repository] ************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : setup name index and data URLs] *************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [java : setup name sources] *************************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [java : set whether webserver is apache or nginx] ***************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [java : set exec_jar as default value] **************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [java : set deployment packaging] *******************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : show ansible versions] **********************************************************************************
+ok: [collectory.vtatlasoflife.org] => {
+    "msg": "You are using Ansible 2.8.0 on Debian. The current supported version for ala-install is 2.8.1."
+}
+
+TASK [java : check the ansible version] ******************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : set ubuntu-14.04 variables] *****************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : set ubuntu-16.04 variables] *****************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : set ubuntu-18.04 variables - tomcat version] ************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [java : set ubuntu-18.04 variables] *****************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [java : set java defaults for openjdk8] *************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [java : set java defaults for zulu8] ****************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : set name index date] ************************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [java : set name data date] *************************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [java : set name index location with date latest] ***************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [java : using the ALA nexus repository] *************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [java : using the GBIF nexus repository] ************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : setup name index and data URLs] *************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [java : setup name sources] *************************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [java : set whether webserver is apache or nginx] ***************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [java : set exec_jar as default value] **************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [java : set deployment packaging] *******************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : install openjdk 8 java (Debian)] ************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [java : install ca-certificates (Debian)] ***********************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [java : Remove Oracle Java 8 (using OpenJDK8 instead)] **********************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [java : Remove Oracle Java 8 as default JDK] ********************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [java : show ansible versions] **********************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : check the ansible version] ******************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : set ubuntu-14.04 variables] *****************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : set ubuntu-16.04 variables] *****************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : set ubuntu-18.04 variables - tomcat version] ************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : set ubuntu-18.04 variables] *****************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : set java defaults for openjdk8] *************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : set java defaults for zulu8] ****************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : set name index date] ************************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : set name data date] *************************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : set name index location with date latest] ***************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : using the ALA nexus repository] *************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : using the GBIF nexus repository] ************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : setup name index and data URLs] *************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : setup name sources] *************************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : set whether webserver is apache or nginx] ***************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : set exec_jar as default value] **************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : set deployment packaging] *******************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : Add PPA key for Azul Apt repository] ********************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : Add Azul Apt repository for their OpenJDK-8 package, named Zulu-8] **************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : install zulu-8 (Debian)] ********************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : install ca-certificates (Debian)] ***********************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : Remove Oracle Java 8 (using Zulu8 instead)] *************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [java : Remove Oracle Java 8 as default JDK] ********************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [install apache if configured] **********************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [install nginx if configured] ***********************************************************************************
+
+TASK [nginx : Include OS-specific variables.] ************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [nginx : Define nginx_user.] ************************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [nginx : Enable nginx repo.] ************************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [nginx : Ensure nginx is installed.] ****************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [nginx : Add PPA for Nginx.] ************************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [nginx : Ensure nginx will reinstall if the PPA was just added.] ************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [nginx : Update apt cache.] *************************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [nginx : Ensure nginx is installed.] ****************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [nginx : Update pkg cache.] *************************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [nginx : Ensure nginx is installed.] ****************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [nginx : Create logs directory.] ********************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [nginx : Ensure nginx is installed.] ****************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [nginx : Create logs directory.] ********************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [nginx : Ensure nginx is installed.] ****************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [nginx : Remove default nginx vhost config file (if configured).] ***********************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [nginx : Ensure nginx_vhost_path exists.] ***********************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [nginx : Add managed vhost config files.] ***********************************************************************
+
+TASK [nginx : Remove managed vhost config files.] ********************************************************************
+
+TASK [nginx : Remove legacy vhosts.conf file.] ***********************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [nginx : clear directory for vhost fragments] *******************************************************************
+ok: [collectory.vtatlasoflife.org] => (item=vtatlasoflife.org)
+
+TASK [nginx : remove previous fragments dir for ala_default] *********************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [nginx : Copy nginx mime.types file.] ***************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [nginx : Copy nginx configuration in place.] ********************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [nginx : Ensure nginx is started and enabled to start at boot.] *************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [mysql-5.7 : show ansible versions] *****************************************************************************
+ok: [collectory.vtatlasoflife.org] => {
+    "msg": "You are using Ansible 2.8.0 on Debian. The current supported version for ala-install is 2.8.1."
+}
+
+TASK [mysql-5.7 : check the ansible version] *************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [mysql-5.7 : set ubuntu-14.04 variables] ************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [mysql-5.7 : set ubuntu-16.04 variables] ************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [mysql-5.7 : set ubuntu-18.04 variables - tomcat version] *******************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [mysql-5.7 : set ubuntu-18.04 variables] ************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [mysql-5.7 : set java defaults for openjdk8] ********************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [mysql-5.7 : set java defaults for zulu8] ***********************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [mysql-5.7 : set name index date] *******************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [mysql-5.7 : set name data date] ********************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [mysql-5.7 : set name index location with date latest] **********************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [mysql-5.7 : using the ALA nexus repository] ********************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [mysql-5.7 : using the GBIF nexus repository] *******************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [mysql-5.7 : setup name index and data URLs] ********************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [mysql-5.7 : setup name sources] ********************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [mysql-5.7 : set whether webserver is apache or nginx] **********************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [mysql-5.7 : set exec_jar as default value] *********************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [mysql-5.7 : set deployment packaging] **************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [mysql-5.7 : install mysql (RedHat)] ****************************************************************************
+skipping: [collectory.vtatlasoflife.org] => (item=[]) 
+
+TASK [mysql-5.7 : install mysql (Debian)] ****************************************************************************
+ok: [collectory.vtatlasoflife.org] => (item=[u'mysql-server-5.7', u'python-mysqldb'])
+
+TASK [mysql-5.7 : set mysql variable - sql-mode] *********************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [mysql-5.7 : warn about using the default root user password] ***************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [mysql-5.7 : change root user password on first run] ************************************************************
+skipping: [collectory.vtatlasoflife.org] => (item=vtatlasoflife) 
+skipping: [collectory.vtatlasoflife.org] => (item=127.0.0.1) 
+skipping: [collectory.vtatlasoflife.org] => (item=::1) 
+skipping: [collectory.vtatlasoflife.org] => (item=localhost) 
+
+TASK [mysql-5.7 : delete anonymous MySQL user for the host] **********************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [mysql-5.7 : delete anyonmous MySQL user for localhost] *********************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [mysql-5.7 : drop test database] ********************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [mysql-5.7 : create my.cnf file] ********************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [augeas : install augeas (RedHat)] ******************************************************************************
+skipping: [collectory.vtatlasoflife.org] => (item=[]) 
+
+TASK [augeas : Add augeas backport ppa repository (precise)] *********************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [augeas : install augeas (Debian)] ******************************************************************************
+ok: [collectory.vtatlasoflife.org] => (item=[u'libaugeas0', u'augeas-lenses', u'augeas-tools', u'python-augeas', u'python-libxml2', u'libpython2.7'])
+
+TASK [tomcat : show ansible versions] ********************************************************************************
+ok: [collectory.vtatlasoflife.org] => {
+    "msg": "You are using Ansible 2.8.0 on Debian. The current supported version for ala-install is 2.8.1."
+}
+
+TASK [tomcat : check the ansible version] ****************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [tomcat : set ubuntu-14.04 variables] ***************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [tomcat : set ubuntu-16.04 variables] ***************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [tomcat : set ubuntu-18.04 variables - tomcat version] **********************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [tomcat : set ubuntu-18.04 variables] ***************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [tomcat : set java defaults for openjdk8] ***********************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [tomcat : set java defaults for zulu8] **************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [tomcat : set name index date] **********************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [tomcat : set name data date] ***********************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [tomcat : set name index location with date latest] *************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [tomcat : using the ALA nexus repository] ***********************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [tomcat : using the GBIF nexus repository] **********************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [tomcat : setup name index and data URLs] ***********************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [tomcat : setup name sources] ***********************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [tomcat : set whether webserver is apache or nginx] *************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [tomcat : set exec_jar as default value] ************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [tomcat : set deployment packaging] *****************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [tomcat : Install universe repository for tomcat7 install] ******************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [tomcat : install libtcnative-1 (RedHat)] ***********************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [tomcat : install tomcat (RedHat)] ******************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [tomcat : install libtcnative-1 (Debian)] ***********************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [tomcat : install tomcat (Debian)] ******************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [tomcat : enable the HTTP 1.1 connector] ************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [tomcat : enable the AJP 1.3 connector] *************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [tomcat : configure tomcat memory (RedHat)] *********************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [tomcat : configure tomcat memory (Debian)] *********************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [tomcat : Set JAVA_HOME  (Debian)] ******************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [tomcat : ensure tomcat temp directory exists] ******************************************************************
+changed: [collectory.vtatlasoflife.org]
+
+TASK [tomcat : configure tomcat temp directory (Debian)] *************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [tomcat : prepare user prefs directory] *************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [collectory : show ansible versions] ****************************************************************************
+ok: [collectory.vtatlasoflife.org] => {
+    "msg": "You are using Ansible 2.8.0 on Debian. The current supported version for ala-install is 2.8.1."
+}
+
+TASK [collectory : check the ansible version] ************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [collectory : set ubuntu-14.04 variables] ***********************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [collectory : set ubuntu-16.04 variables] ***********************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [collectory : set ubuntu-18.04 variables - tomcat version] ******************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [collectory : set ubuntu-18.04 variables] ***********************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [collectory : set java defaults for openjdk8] *******************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [collectory : set java defaults for zulu8] **********************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [collectory : set name index date] ******************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [collectory : set name data date] *******************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [collectory : set name index location with date latest] *********************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [collectory : using the ALA nexus repository] *******************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [collectory : using the GBIF nexus repository] ******************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [collectory : setup name index and data URLs] *******************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [collectory : setup name sources] *******************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [collectory : set whether webserver is apache or nginx] *********************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [collectory : set exec_jar as default value] ********************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [collectory : set deployment packaging] *************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [collectory : ensure mysql is running (this is idempotent so safe)] *********************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [collectory : create collectory DB] *****************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [collectory : create collectory DB user] ************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [collectory : ensure target directories exist [data subdirectories etc.]] ***************************************
+ok: [collectory.vtatlasoflife.org] => (item=/data/generic-collectory)
+ok: [collectory.vtatlasoflife.org] => (item=/data/generic-collectory/upload/tmp)
+ok: [collectory.vtatlasoflife.org] => (item=/data/generic-collectory/taxa/data)
+
+TASK [collectory : copy all data assets] *****************************************************************************
+ok: [collectory.vtatlasoflife.org] => (item=data/config)
+ok: [collectory.vtatlasoflife.org] => (item=data/data)
+
+TASK [collectory : copy all template configs] ************************************************************************
+changed: [collectory.vtatlasoflife.org] => (item=config/collectory-config.properties)
+
+TASK [collectory : set data ownership [all data is owned by tomcat]] *************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [collectory : determine if a virtual host is required (vhost not required for localhost, 127.0.0.1 or any hostname with a colon in it)] ***
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [collectory : Is a virtual host required?] **********************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [collectory : check whether HTTPS is required] ******************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [collectory : Is HTTPS required?] *******************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [collectory : Should HTTP redirect to HTTPS?] *******************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [collectory : set ssl_cert_filepath variable, if required] ******************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [collectory : set ssl_key_filepath variable, if required] *******************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [collectory : set ssl_chain_filepath variable, if required] *****************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [collectory : ensure apache vhost exists] ***********************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [collectory : add optional additional proxy pass rules (if required)] *******************************************
+
+TASK [collectory : ensure proxy pass exists for apache (without default context)] ************************************
+skipping: [collectory.vtatlasoflife.org] => (item={u'dest': u'ajp://localhost:8009/', u'src': u'/'}) 
+
+TASK [collectory : create a proxy pass rule for the root context (if required)] **************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [collectory : ensure www directory exists] **********************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [collectory : ensure HTTPS certificate directory exists (if required)] ******************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [collectory : check whether copying HTTPS certificates from local is required] **********************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [collectory : set local directory for HTTPS certificate copy] ***************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [collectory : set ssl_cert_file if undefined] *******************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [collectory : set ssl_key_file if undefined] ********************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [collectory : set ssl_chain_file if undefined] ******************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [collectory : copy HTTPS certificate files from local] **********************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [collectory : Enable vhost for Apache] **************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [collectory : Enable SSL module for Apache (if required)] *******************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [collectory : Add the virtual host to the /etc/hosts file for Vagrant instances] ********************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [add nginx vhost if configured] *********************************************************************************
+
+TASK [nginx_vhost : determine if a virtual host is required (vhost not required for localhost, 127.0.0.1 or any hostname with a colon in it)] ***
+ok: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : check whether HTTPS is required] *****************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : check whether we are rewriting HTTP to HTTPS] ****************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : make sure required parameters are defined] *******************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : set ssl_cert_filepath variable, if required] *****************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : set ssl_key_filepath variable, if required] ******************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : check whether copying HTTPS certificates from local is required] *********************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : copy HTTPS certificate files from local] *********************************************************
+skipping: [collectory.vtatlasoflife.org] => (item=/certs/ssl-cert-snakeoil.pem) 
+skipping: [collectory.vtatlasoflife.org] => (item=/private/ssl-cert-snakeoil.key) 
+skipping: [collectory.vtatlasoflife.org] => (item=/) 
+
+TASK [nginx_vhost : set context path to root by default] *************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : set webserver_extra_servernames empty by default] ************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : set nginx_paths with root path by default] *******************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : ensure sites-available dir is present] ***********************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : ensure vhost fragments dir is present] ***********************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : ensure nginx cache dir is present if configured] *************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : ensure nginx cache dir will be cleared by handler] ***********************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : add upstream fragment] ***************************************************************************
+skipping: [collectory.vtatlasoflife.org] => (item={u'path': u'/', u'proxy_pass': u'http://127.0.0.1:8080/', u'use_cache': False, u'is_proxy': True}) 
+
+TASK [nginx_vhost : add blocking fragment] ***************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : add nginx rate limiter if configured] ************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : add cache fragment if configured] ****************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : add connection upgrade fragment] *****************************************************************
+skipping: [collectory.vtatlasoflife.org] => (item={u'path': u'/', u'proxy_pass': u'http://127.0.0.1:8080/', u'use_cache': False, u'is_proxy': True}) 
+
+TASK [nginx_vhost : add start http fragment] *************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : add basic http fragments] ************************************************************************
+ok: [collectory.vtatlasoflife.org] => (item=20_servername)
+ok: [collectory.vtatlasoflife.org] => (item=90_end)
+
+TASK [nginx_vhost : if not using https, delete all https fragments] **************************************************
+
+TASK [nginx_vhost : create root directory] ***************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : if not using force_https, add root http fragment] ************************************************
+skipping: [collectory.vtatlasoflife.org] => (item=50_root) 
+
+TASK [nginx_vhost : if not using force_https, add robots http fragment] **********************************************
+skipping: [collectory.vtatlasoflife.org] => (item=60_robots) 
+
+TASK [nginx_vhost : if not using force_https, add location http fragments] *******************************************
+skipping: [collectory.vtatlasoflife.org] => (item={u'path': u'/', u'proxy_pass': u'http://127.0.0.1:8080/', u'use_cache': False, u'is_proxy': True}) 
+
+TASK [nginx_vhost : if not using force_https, add location http fragments] *******************************************
+skipping: [collectory.vtatlasoflife.org] => (item={u'path': u'/', u'proxy_pass': u'http://127.0.0.1:8080/', u'use_cache': False, u'is_proxy': True}) 
+
+TASK [nginx_vhost : if not using force_https, add location http fragments] *******************************************
+skipping: [collectory.vtatlasoflife.org] => (item={u'path': u'/', u'proxy_pass': u'http://127.0.0.1:8080/', u'use_cache': False, u'is_proxy': True}) 
+
+TASK [nginx_vhost : if not using force_https, delete force_https fragment] *******************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : if using force_https, add force_https fragment] **************************************************
+ok: [collectory.vtatlasoflife.org] => (item=30_force_https)
+
+TASK [nginx_vhost : add start https fragment] ************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : add basic https fragments] ***********************************************************************
+ok: [collectory.vtatlasoflife.org] => (item=20_servername)
+ok: [collectory.vtatlasoflife.org] => (item=40_ssl)
+ok: [collectory.vtatlasoflife.org] => (item=50_root)
+ok: [collectory.vtatlasoflife.org] => (item=60_robots)
+ok: [collectory.vtatlasoflife.org] => (item=90_end)
+
+TASK [nginx_vhost : add location https fragments] ********************************************************************
+ok: [collectory.vtatlasoflife.org] => (item={u'path': u'/', u'proxy_pass': u'http://127.0.0.1:8080/', u'use_cache': False, u'is_proxy': True})
+
+TASK [nginx_vhost : add location https fragments] ********************************************************************
+ok: [collectory.vtatlasoflife.org] => (item={u'path': u'/', u'proxy_pass': u'http://127.0.0.1:8080/', u'use_cache': False, u'is_proxy': True})
+
+TASK [nginx_vhost : add location https fragments] ********************************************************************
+ok: [collectory.vtatlasoflife.org] => (item={u'path': u'/', u'proxy_pass': u'http://127.0.0.1:8080/', u'use_cache': False, u'is_proxy': True})
+
+TASK [nginx_vhost : assemble fragments into nginx vhost config] ******************************************************
+changed: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : symlink vhost to sites-enabled] ******************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : check whether we need a default vhost for Amazon load balancer health checks] ********************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : check whether we need a default vhost for ala] ***************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : remove symlink to default vhost so we can replace with the ala_default that we can track] ********
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : remove deprecated default aws_elb_default vhost configuration from sites-enabled if it exists for backwards compatibility] ***
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : remove previous fragments dir for aws_elb_default] ***********************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : ensure fragments dir for default vhost for ala is present] ***************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : add upstream fragment] ***************************************************************************
+skipping: [collectory.vtatlasoflife.org] => (item={u'path': u'/', u'proxy_pass': u'http://127.0.0.1:8080/', u'use_cache': False, u'is_proxy': True}) 
+
+TASK [nginx_vhost : add start of default vhost for ala] **************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : add start location fragment for default vhost for Amazon load balancer health checks] ************
+skipping: [collectory.vtatlasoflife.org] => (item={u'path': u'/', u'proxy_pass': u'http://127.0.0.1:8080/', u'use_cache': False, u'is_proxy': True}) 
+
+TASK [nginx_vhost : add default contents location fragment for default vhost for Amazon load balancer health checks] ***
+skipping: [collectory.vtatlasoflife.org] => (item={u'path': u'/', u'proxy_pass': u'http://127.0.0.1:8080/', u'use_cache': False, u'is_proxy': True}) 
+
+TASK [nginx_vhost : add usual contents location fragment for default vhost for Amazon load balancer health checks] ***
+skipping: [collectory.vtatlasoflife.org] => (item={u'path': u'/', u'proxy_pass': u'http://127.0.0.1:8080/', u'use_cache': False, u'is_proxy': True}) 
+
+TASK [nginx_vhost : add end location fragment for default vhost for Amazon load balancer health checks] **************
+skipping: [collectory.vtatlasoflife.org] => (item={u'path': u'/', u'proxy_pass': u'http://127.0.0.1:8080/', u'use_cache': False, u'is_proxy': True}) 
+
+TASK [nginx_vhost : add end of default vhost for ala] ****************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : assemble fragments into default vhost for Amazon load balancer health checks] ********************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : symlink default vhost for Amazon load balancer health checks to sites-enabled] *******************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : unset ala_default_vhost] *************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [nginx_vhost : unset nginx_paths] *******************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [collectory : set_fact] *****************************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [collectory : set_fact] *****************************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [collectory : set_fact] *****************************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [collectory : set_fact] *****************************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [collectory : set_fact] *****************************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+TASK [collectory : set_fact] *****************************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [collectory : debug] ********************************************************************************************
+ok: [collectory.vtatlasoflife.org] => {
+    "msg": "war_filename is ROOT; tomcat_deploy_dir is /var/lib/tomcat7/webapps-collectory.vtatlasoflife.org; log_filename is generic-collectory"
+}
+
+TASK [collectory : create tomcat vhost] ******************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [collectory : ensure tomcat vhost webapps directory exists if necessary] ****************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [collectory : check war file existence] *************************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [collectory : back up existing war file] ************************************************************************
+changed: [collectory.vtatlasoflife.org]
+
+TASK [collectory : check if a log file exists] ***********************************************************************
+ok: [collectory.vtatlasoflife.org]
+
+TASK [collectory : back up tomcat log file] **************************************************************************
+changed: [collectory.vtatlasoflife.org]
+
+TASK [collectory : remove existing webapp (to ensure a clean redeployment)] ******************************************
+changed: [collectory.vtatlasoflife.org]
+
+TASK [collectory : download from maven repo https://nexus.ala.org.au/service/local/artifact/maven/redirect?r=public&g=au.org.ala&a=generic-collectory&v=LATEST&e=war&c=] ***
+changed: [collectory.vtatlasoflife.org]
+
+TASK [collectory : download from local build] ************************************************************************
+skipping: [collectory.vtatlasoflife.org]
+
+RUNNING HANDLER [collectory : restart tomcat] ************************************************************************
+changed: [collectory.vtatlasoflife.org]
+
+RUNNING HANDLER [nginx_vhost : reload nginx] *************************************************************************
+changed: [collectory.vtatlasoflife.org]
+
+PLAY RECAP ***********************************************************************************************************
+collectory.vtatlasoflife.org : ok=151  changed=10   unreachable=0    failed=0    skipped=145  rescued=0    ignored=0   
+

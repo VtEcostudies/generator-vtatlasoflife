@@ -1,0 +1,37 @@
+#
+# This is a inventory with extras variables so here you can override the
+# generated configurations with other variables without modifing the other
+# inventories. So when you rerun the generator in the future, you don't
+# loose your changes.
+#
+
+[all:vars]
+
+favicon_url = https://www.gbif.org/favicon.ico
+skin_favicon = https://www.gbif.org/favicon.ico
+technical_contact = support@vtatlasoflife.org
+orgEmail = info@vtatlasoflife.org
+
+#
+# Put here the correct location for your SSL certs. Now the inventories are
+# using this self-signed ubuntu cert
+#
+# ssl_certificate_server_dir=/etc/ssl/
+# ssl_cert_file=certs/ssl-cert-snakeoil.pem
+# ssl_key_file=private/ssl-cert-snakeoil.key
+#
+# If you want to use letsencrypt, you can set something similar to:
+#
+# ssl_certificate_server_dir=/etc/letsencrypt/live/vtatlasoflife.org
+# ssl_cert_file=fullchain.pem
+# ssl_key_file=privkey.pem
+#
+# With letsencrypt, is recommended to use one cert with multiple domains to
+# make the configuration of the inventories more simple
+#
+# You can transfer the cert between machines after renewal via hooks (or
+# using a shared folder via NFS, etc). See:
+#
+# https://certbot.eff.org/docs/using.html#renewing-certificates
+#
+
