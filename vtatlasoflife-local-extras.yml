@@ -12,7 +12,7 @@ skin_favicon = https://www.vtecostudies.org/favicon.ico
 technical_contact = vtatlasoflife@vtecostudies.org
 orgEmail = vtatlasoflife@vtecostudies.org
 
-# Collectory Map config
+# Collectory Map config 43.916944, -72.668056
 collectionsMap.centreMapLon=-72.668056
 collectionsMap.centreMapLat=43.916944
 collectionsMap.defaultZoom=8
@@ -25,8 +25,58 @@ eml.administrativeArea=Vermont
 eml.postalCode=05001
 eml.country=United States
 
+# Use for downloads in biocache
+organizationName = Vermont Atlas of Life
+orgCity = White River Junction
+orgStateProvince = Vermont
+orgPostcode = 05001
+orgCountry = USA
+orgPhone = (802) 649-1431
+orgFax =
+orgEmail = info@vtatlasoflife.org
+download_support_email_enabled = false
+download_support_email = support@vtatlasoflife.org
+email_sender = support@vtatlasoflife.org
+mail.smtp.host = locahost
+mail.smtp.port = 25
+# Used by webapi
+mail_host = locahost
+
+default_country = USA
+commonname_lang = en
+# geocode_region = AU
+
+# default for English or pt_BR, fr, es, de, etc
+spatial_hub_locale = default
+
+# BIE local vars
+default_map_lat = 43.916944
+default_map_lon = -72.668056
+vernacular_language = en
+eol_lang = en
+speciesList_api_key = put-here-a-valid-api-key
+
+#trove api key under valadmin user with vtatlasoflife@vtecostudies.org email
+trove_api_key = 67qr6hmbth84c3o
+# BHL api key did not require a login account: https://www.biodiversitylibrary.org/getapikey.aspx
+bhl_api_key = 7785d8e7-ef23-4816-a187-d7301a6b7570
+
+# SOLR local vars
+# solr_heap=16g
+# If solr_bind_jetty_host is false other hosts can connect to solr instance
+# (so you should use a firewall to prevent connections from the outside
 # Set to true if only allow connections from the same solr host
-solr_bind_jetty_host = false
+solr_bind_jetty_host = true
+
+# By default caches are disabled (the collections cache is problematic when collectory + biocache on same server)
+# Configure properly for your case
+
+caches_auth_enabled=false
+caches_log_enabled=false
+# If collections cache is disabled biocache-service will show collections_uid, institutions_uid instead of their respective names in facets and legends
+caches_collections_enabled=false
+caches_layers_enabled=false
+
 #
 # Put here the correct location for your SSL certs. Now the inventories are
 # using this self-signed ubuntu cert
@@ -50,3 +100,39 @@ solr_bind_jetty_host = false
 # https://certbot.eff.org/docs/using.html#renewing-certificates
 #
 
+
+[collectory:vars]
+
+[biocache-hub:vars]
+
+[biocache-service-clusterdb:vars]
+
+[bie-hub:vars]
+
+[bie-index:vars]
+
+[image-service:vars]
+
+[species-list:vars]
+
+[regions:vars]
+
+[logger-service:vars]
+
+[solr7-server:vars]
+
+[cas-servers:vars]
+
+[biocache-db:vars]
+
+[biocache-cli:vars]
+
+[spatial:vars]
+
+[nameindexer:vars]
+
+
+# Uncomment this if your biocache-cli is running in a host without tomcat installed
+# [biocache-cli:vars]
+#
+# nameindex_user = root

@@ -26,7 +26,7 @@ You'll need to replace `12.12.12.1` etc with the IP address of some new Ubuntu 1
 
 These machines should have an user `ubuntu` with `sudo` permissions.
 
-You should generate and use some ssh key and copy `~/.ssh/MyKey.pub` in thouse machines under `~ubuntu/.ssh/authorized_keys` (via `ssh-copy-id` for avoid issues).
+You should generate and use some ssh key and copy `~/.ssh/MyKey.pub` in those machines under `~ubuntu/.ssh/authorized_keys` (via `ssh-copy-id` for avoid issues).
 
 You can test your initial setup with some `ssh` command like:
 ```
@@ -56,7 +56,10 @@ ansible-playbook --private-key ~/.ssh/MyKey.pem -u ubuntu -i vtatlasoflife-inven
 ansible-playbook --private-key ~/.ssh/MyKey.pem -u ubuntu -i vtatlasoflife-inventory.yml -i vtatlasoflife-local-extras.yml -i vtatlasoflife-local-passwords.yml $AI/ansible/logger-standalone.yml --limit logger.vtatlasoflife.org
 ansible-playbook --private-key ~/.ssh/MyKey.pem -u ubuntu -i vtatlasoflife-inventory.yml -i vtatlasoflife-local-extras.yml -i vtatlasoflife-local-passwords.yml $AI/ansible/solr7-standalone.yml --limit index.vtatlasoflife.org
 ansible-playbook --private-key ~/.ssh/MyKey.pem -u ubuntu -i vtatlasoflife-inventory.yml -i vtatlasoflife-local-extras.yml -i vtatlasoflife-cas-inventory.yml -i vtatlasoflife-cas-local-extras.yml -i vtatlasoflife-local-passwords.yml --extra-vars "ala_install_repo=$AI" $AI/ansible/cas5-standalone.yml --limit auth.vtatlasoflife.org
+ansible-playbook --private-key ~/.ssh/MyKey.pem -u ubuntu -i vtatlasoflife-inventory.yml -i vtatlasoflife-local-extras.yml -i vtatlasoflife-local-passwords.yml $AI/ansible/biocache-db.yml --limit vtatlasoflife.org
+ansible-playbook --private-key ~/.ssh/MyKey.pem -u ubuntu -i vtatlasoflife-inventory.yml -i vtatlasoflife-local-extras.yml -i vtatlasoflife-local-passwords.yml $AI/ansible/biocache-cli.yml --limit vtatlasoflife.org
 ansible-playbook --private-key ~/.ssh/MyKey.pem -u ubuntu -i vtatlasoflife-inventory.yml -i vtatlasoflife-local-extras.yml -i vtatlasoflife-spatial-inventory.yml -i vtatlasoflife-spatial-local-extras.yml -i vtatlasoflife-local-passwords.yml $AI/ansible/spatial.yml --limit spatial.vtatlasoflife.org
+ansible-playbook --private-key ~/.ssh/MyKey.pem -u ubuntu -i vtatlasoflife-inventory.yml -i vtatlasoflife-local-extras.yml -i vtatlasoflife-local-passwords.yml $AI/ansible/nameindexer-standalone.yml --limit vtatlasoflife.org
 ```
 #### ansible-playbook wrapper
 
@@ -111,7 +114,11 @@ or all the services with something like:
 
 ### Rerunning the generator
 
-You can rerun the generator with the option `--replay` to use all the previous responses and regenerate the inventories with some modification (if for instance you want to add a new service, or using a new version of this generator with improvements).
+You can rerun the generator with the option `yo living-atlas --replay` to use all the previous responses and regenerate the inventories with some modification (if for instance you want to add a new service, or using a new version of this generator with improvements).
+
+You can also use `yo living-atlas --replay-dont-ask` if you only want to repeat the inventories generation (for instance, with a new version of the living-atlas generator to get some update, or when you edit carefully the `../.yo-rc.json` answers file to, for instance, enable ssl or some service, and only want to regenerate the inventories with the changes).
+
+Also, you can use `--debug` to see some verbose debug info.
 
 We recommend to override and set variables adding then to `vtatlasoflife-local-extras.yml` and `vtatlasoflife-spatial-local-extras.yml` without modify the generated `vtatlasoflife-inventory.yml` and `vtatlasoflife-spatial-inventory.yml`, so you can rerun the generator in the future without lost local changes. The `*-local-extras.sample` files will be updated with future versions of this generator, so you can compare from time to time these samples with your `*-local-extras.yml` files to add new vars, etc.
 

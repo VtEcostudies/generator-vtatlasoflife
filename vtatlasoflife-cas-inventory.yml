@@ -41,13 +41,13 @@ cas_management_server_name=https://auth.vtatlasoflife.org
 #
 # Better edit: quick-start-cas-5-local-extras.yml with these values
 #
-pac4j_cookie_signing_key=5zXjK6-c5ORtPfk1rowzC1IiM8LBEZlhoLZPKlgMG4MmRlIGHDH_U1s2lQoARv0DoOzX5IrHxgIISURbL0Oxzw
-pac4j_cookie_encryption_key=XgvX2f--YYTUipgcbkVNeDJMrzTfCVF-OC3NtzbrlHY
 
-cas_webflow_signing_key=EJLKKiNRmxr334RtEoSETMCBI-k0aUMyUvTJOpgnHZHld34csU8o_EtTOYs-3gAsLHOXk8wdzjIoigDSQHHInQ
-cas_webflow_encryption_key=PPTmhSJ40h4GqlSyo-234Q
+pac4j_cookie_signing_key=
+pac4j_cookie_encryption_key=
 
-userdetails_base_url=https://auth.vtatlasoflife.org/userdetails
+cas_webflow_signing_key=
+cas_webflow_encryption_key=
+
 user_create_password=to_be_added_in_the_near_future
 endpoints_enabled=true
 user_store_db_name=emmet
