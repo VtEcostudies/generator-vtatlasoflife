@@ -208,6 +208,7 @@ ala_base_url = https://vtatlasoflife.org
 # Warning: in spatial, the app uses userdetails_base_url instead of userdetails_url
 # so in the rest of inventories like CAS, we use the correct userdetails_base_url (without context /userdetails)
 user_details_base_url = https://auth.vtatlasoflife.org/userdetails
+# NOTE: this header/footer url doesn't have a trailing /
 header_and_footer_baseurl = https://vtatlasoflife.org
 logger_base_url = https://logger.vtatlasoflife.org/service
 lists_url = https://lists.vtatlasoflife.org
