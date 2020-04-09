@@ -198,14 +198,14 @@ nginx_client_max_body_size=120m
 
 bie_base_url = https://bie.vtatlasoflife.org
 bie_service_base_url = https://bie-ws.vtatlasoflife.org
-favicon_url = https://www.gbif.org/favicon-16x16.png
+favicon_url = https://vtatlasoflife.org/val_www/img/vce_favicon.png
 collections_url = https://collectory.vtatlasoflife.org
 collectory_url = https://collectory.vtatlasoflife.org
 biocache_url = https://biocache.vtatlasoflife.org
 biocache_service_url = https://biocache-ws.vtatlasoflife.org
 sampling_url = https://spatial.vtatlasoflife.org/ws
 ala_base_url = https://vtatlasoflife.org
-# Warning: in spatial, the app uses userdetais_base_url instead of userdetails_url
+# Warning: in spatial, the app uses userdetails_base_url instead of userdetails_url
 # so in the rest of inventories like CAS, we use the correct userdetails_base_url (without context /userdetails)
 user_details_base_url = https://auth.vtatlasoflife.org/userdetails
 header_and_footer_baseurl = https://vtatlasoflife.org

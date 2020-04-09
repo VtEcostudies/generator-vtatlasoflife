@@ -7,14 +7,49 @@
 
 [all:vars]
 
-favicon_url = https://www.gbif.org/favicon.ico
-skin_favicon = https://www.gbif.org/favicon.ico
-technical_contact = support@vtatlasoflife.org
-orgEmail = info@vtatlasoflife.org
+favicon_url = https://www.vtatlasoflife.org/favicon.ico
+skin_favicon = https://www.vtatlasoflife.org/favicon.ico
+#technical_contact = support@<%= LA_domain %>
+#orgEmail = info@<%= LA_domain %>
+technical_contact = support@vtecostudies.org
+orgEmail = info@vtecostudies.org
+google_api_key = some-google-key
 
 [spatial-hub:vars]
 
 # Here we override the default 0,0 coordinates
-startup_lat = 39.8581
-startup_lng = -4.0226
-startup_zoom = 3
+startup_lat = 43.696125
+startup_lng = -72.319672
+startup_zoom = 6
+google_analytics_id = UA-XXXXX
+nginx_client_max_body_size=300m
+
+# Your node default spatial area (by default Australia)
+spatial_default_area_name = 'Vermont, USA'
+#spatial_default_area_sqkm = 50000
+#spatial_default_area_bbox = [-19.556, 26.588, 5.493, 44.434]
+#(W 73°28'00"--W 71°26'00"/N 45°02'00"--N 42°41'00")
+#according to openstreetmap, bounding box is usually:
+#bbox = left,bottom,right,top
+#bbox = min Longitude , min Latitude , max Longitude , max Latitude 
+#spatial_default_area_bbox = [-73.5, 42.7, -71.4, 45.1]
+
+# Used by spatial-hub and spatial-service to allow task creation
+spatial_service_api_key=put-here-some-key
+
+[spatial-service:vars]
+
+# Used by spatial-hub and spatial-service to allow task creation
+spatial_service_api_key=put-here-some-key
+spatial_service_service_key=put-here-some-key
+spatial_service_slave_key=put-here-some-key
+
+google_api_key = some-google-key
+
+# [geoserver:vars]
+
+# [layers-service:vars]
+
+# [spatial-analysis:vars]
+
+# [layers-db:vars]

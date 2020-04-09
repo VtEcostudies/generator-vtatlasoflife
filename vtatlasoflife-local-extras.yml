@@ -11,6 +11,8 @@ favicon_url = https://www.vtecostudies.org/favicon.ico
 skin_favicon = https://www.vtecostudies.org/favicon.ico
 technical_contact = vtatlasoflife@vtecostudies.org
 orgEmail = vtatlasoflife@vtecostudies.org
+species_list_version = 3.5.1
+
 
 # Collectory Map config 43.916944, -72.668056
 collectionsMap.centreMapLon=-72.668056
@@ -35,8 +37,8 @@ orgPhone = (802) 649-1431
 orgFax =
 orgEmail = info@vtatlasoflife.org
 download_support_email_enabled = false
-download_support_email = support@vtatlasoflife.org
-email_sender = support@vtatlasoflife.org
+download_support_email = support@vtecostudies.org
+email_sender = support@vtecostudies.org
 mail.smtp.host = locahost
 mail.smtp.port = 25
 # Used by webapi
